@@ -1,0 +1,12 @@
+#shop-panel {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.item {
+  border: 1px solid blue;
+}
+
+.shop-item {
+  width: 20vw;
+}

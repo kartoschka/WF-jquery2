@@ -41,7 +41,4 @@ function ex2() {
                                     if(el == "Santa Claus") jqobj.click(e => $(e.target).remove())
                                     return jq.add(jqobj)}, $()))
     .appendTo("body")
-  
-  
 }
-
