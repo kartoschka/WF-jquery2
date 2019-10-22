@@ -11,9 +11,19 @@
 </head>
 <body>
   <script>
+    const ItemList = []
+    for(let index in TEST_DATA) {
+      let data = TEST_DATA[index]
+      data.id = index
+      ItemList.push(new Item(data))
+    }
 
     const shop = new Shop(ItemList)    
-    $("body").append(shop.make_jqobj())
+    const cart = new Cart()
+
+    ItemList.forEach(i => i.addCountObserver(cart))
+
+    $("body").append(shop.init_jqobj()).append(cart.init_jqobj())
 
   </script>
 </body>

@@ -1,6 +1,15 @@
+body {
+  display: flex;
+}
+
 #shop-panel {
+  width: 70vw;
   display: flex;
   flex-flow: row wrap;
+}
+
+#cart-panel {
+  width: 30vw;
 }
 
 .item {
@@ -10,3 +19,9 @@
 .shop-item {
   width: 20vw;
 }
+
+.cart-item {
+  display: flex;
+}
+
+.imgbox img { max-width: 100%; }
